@@ -28,7 +28,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/gleif@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/gleif@sha256:8f2d9e5e93c0fca3f247f87ed6f5601f7c7c6719d8b7bf95d9613e3a3240aecd
   platforms: [linux/amd64, linux/arm64]
   command: ["pygleif", "search", "{company}", "--page-size", "{limit}"]
   output_format: json
